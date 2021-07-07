@@ -1,0 +1,72 @@
+body {
+  background-color: #f9f9f9;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.translator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+form > button {
+  width: 15%;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+form.hide {
+  display: none;
+}
+.task {
+  display: flex;
+  gap: 125px;
+  flex-direction: row;
+}
+.list > .task {
+  background-color: #fff;
+  float: left;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px #0004;
+  margin-top: 10px;
+}
+
+.list > .task > .text {
+  font-size: 20px;
+}
+.list > .task > .actions {
+  opacity: 0;
+
+  font-size: 16px;
+}
+.list > .task:hover > .actions {
+  opacity: 1;
+}
+.task .btn {
+  float: right;
+  padding: 5px 15px;
+  margin-right: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.task .btn.edit {
+  background-color: #36f;
+  color: #fff;
+}
+.task .btn.delete {
+  background-color: #f30;
+  color: #fff;
+}

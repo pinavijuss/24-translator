@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/translator.css">
+
+</head>
+
+<body>
+    <h1 class="title">BEST TRANSLATOR</h1>
+    <div id="best_translator" class="translator">
+        <form class="en_lt_translate">
+            <label for="english">English</label>
+            <input id="new_word" type="text" value="">
+            <label for="lithuanian">Lithuanian</label>
+            <input id="new_word" type="text" value="">
+            <button id="save_button" type="submit">Save</button>
+            <button id="reset_button" type="reset">Reset</button>
+        </form>
+
+
+        <form id="update_task" class="hide">
+            <label for="translated_text">English</label>
+            <input id="translated_text" type="text">
+            <label for="translated_text">Lithuanian</label>
+            <input id="translated_text" type="text">
+            <button id="update_button" type="submit">Update</button>
+            <button id="cancel_button" type="button">Cancel</button>
+        </form>
+
+
+        <div class="list">
+            <div class="task">
+                <div class="en_word">English</div>
+                <div class="lt_word">Lithuanian</div>
+                <div class="actions">
+                    <div class="btn edit fa fa-pencil"></div>
+                    <div class="btn delete fa fa-trash-o"></div>
+                </div>
+            </div>
+
+            <div class="task">
+                <div class="en_word">English</div>
+                <div class="lt_word">Lithuanian</div>
+                <div class="actions">
+                    <div class="btn edit fa fa-pencil"></div>
+                    <div class="btn delete fa fa-trash-o"></div>
+                </div>
+            </div>
+
+            <div class="task">
+                <div class="en_word">English</div>
+                <div class="lt_word">Lithuanian</div>
+                <div class="actions">
+                    <div class="btn edit fa fa-pencil"></div>
+                    <div class="btn delete fa fa-trash-o"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="./js/main.js" type="module" defer></script>
+</body>
+
+</html>
