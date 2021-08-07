@@ -1,6 +1,10 @@
 body {
-  background-color: #f9f9f9;
+  background-color: antiquewhite;
 }
+
+
+
+
 .title {
   display: flex;
   justify-content: center;
@@ -9,15 +13,29 @@ body {
 .translator {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 20px;
 }
 
+
+
+
 form {
   display: flex;
+  flex wrap: wrap;
+  width: 800px;
   gap: 20px;
+  max-width: 90%;
+ 
 }
+  @media(max-width: 880px) {
+      form {
+width: 90%;
+margin: 50px 5%;
+      }
+}
+
 form > button {
   width: 15%;
   line-height: 20px;
@@ -31,6 +49,9 @@ form.hide {
   display: flex;
   gap: 125px;
   flex-direction: row;
+}
+.list {
+    align-items: center;
 }
 .list > .task {
   background-color: #fff;
